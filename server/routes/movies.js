@@ -21,9 +21,9 @@ router.get("/", (req, res) => {
             // JSON Object
             const movie = {
                 title: json.results[i].original_title,
-                release_date: json.results[i],
+                release_date: json.results[i].release_date,
                 id: json.results[i].id,
-                image: json.results[i].backdrop_path,
+                image: "https://image.tmdb.org/t/p/w500" + json.results[i].poster_path ,
             }
             movies.push(movie)
         }
