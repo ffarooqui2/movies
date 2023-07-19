@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import './App.css'
+import {NavBar} from './NavBar'
 
 function App() {
 
@@ -14,7 +15,10 @@ function App() {
 
   return (
     <>
-      <h1>Whats Trending</h1>
+    <div>
+      <NavBar />
+    </div>
+      <h2>Whats Trending</h2>
       <div className = "table">
       {
         data.map(movie => {
