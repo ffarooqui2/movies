@@ -5,7 +5,7 @@ function Home() {
   return(
     <>
       <NavBar />
-      <h1>This is the home page</h1>
+      <h1 className = 'title'>Welcome to the Movie Central</h1>
     </>
   )
 }
