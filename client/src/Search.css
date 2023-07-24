@@ -6,6 +6,7 @@
     flex-direction: column;
     align-items: center;
     min-width: 200px;
+    padding-bottom: 100px;
 }
 .input-wrapper{
     background-color: white;
@@ -16,4 +17,58 @@
     box-shadow: 0px 0px 8px #ddd;
     display: flex;
     align-items: center;
+}
+
+.table-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.movie-card {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    cursor: pointer;
+    transition: border-color 0.25s;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+}
+  
+.movie-card:hover {
+border-color: #646cff;
+}
+
+.movie-card:focus,
+.movie-card:focus-visible {
+outline: 4px auto -webkit-focus-ring-color;
+}
+
+.movie-card-image{
+    border-radius: 30px;
+    max-height: auto;
+    max-width: 300px;
+}
+  
+
+input {
+    background-color: transparent;
+    border: none;
+    height: 100%;
+    font-size: 1.25rem;
+    width: 100%;
+    margin-left: 10px;
+}
+
+input:focus{
+    outline: none;
+}
+
+#search-icon {
+    color: royalblue
 }
