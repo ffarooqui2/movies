@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import './App.css'
 import {NavBar} from './NavBar'
 
-function App() {
+function Trending() {
 
   const [data, setData] = useState([])
 
@@ -15,9 +15,7 @@ function App() {
 
   return (
     <>
-    <div>
       <NavBar />
-    </div>
       <h2>Whats Trending</h2>
       <div className = "table">
       {
@@ -39,4 +37,4 @@ function App() {
   )
 }
 
-export default App
+export default Trending

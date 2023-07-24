@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@700&display=swap');
 
-
 #root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   max-width: 1280px;
@@ -30,6 +29,7 @@
 .movie-card:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
+
 .movie-card-image{
   border-radius: 30px;
   max-height: auto;
@@ -45,7 +45,6 @@
 
 .nav-bar{
   font-family: 'Bebas Neue','Helvetica Neue', sans-serif;
-  background-color: rgb(206, 206, 206);
   display: flex;
   justify-content: space-between;
   text-align: center;
@@ -63,5 +62,5 @@
 }
 
 .nav-bar h1 {
-  font-size: 40px;
+  font-size: 50px;
 }

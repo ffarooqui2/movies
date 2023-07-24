@@ -1,13 +1,15 @@
 import './App.css'
+import { Link } from "react-router-dom";
+
 export function NavBar() {
     return (
         <>
         <nav className = 'nav-bar'>
             <ul>
-                <li>Search</li>
-                <li><a href="#">Top 10 Trending</a></li>
+                <li><Link to="/search">Search</Link></li>
+                <li><Link to="/trending">Trending</Link></li>
             </ul>
-            <h1>MOVIE MONOSPACE</h1>
+            <h1><Link to="/">MOVIE MONOSPACE</Link></h1>
         </nav>
         </>
     )
