@@ -5,7 +5,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-width: 200px;
+    min-width: 500px;
     padding-bottom: 100px;
 }
 .input-wrapper{
@@ -54,6 +54,27 @@ outline: 4px auto -webkit-focus-ring-color;
     max-height: auto;
     max-width: 300px;
 }
+
+.movie-card-expanded {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 1rem;
+    padding: 16px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+}
+  
+.movie-card-expanded h3 {
+margin-top: 0;
+}
+  
+.movie-card-expanded button {
+margin-top: 8px;
+}
+  
   
 
 input {

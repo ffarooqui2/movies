@@ -28,6 +28,7 @@ router.get("/", (req, res) => {
                 title: json.results[i].original_title,
                 release_date: json.results[i].release_date,
                 id: json.results[i].id,
+                overview: json.results[i].overview,
                 image: "https://image.tmdb.org/t/p/w500" + json.results[i].poster_path ,
             }
             movie_display.push(movie)

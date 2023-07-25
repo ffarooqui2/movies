@@ -17,12 +17,13 @@ router.get("/", (req, res) => {
 
         // get top 10 popular movies
         let movies = []
-        for (let i = 0; i < 10; i++) {
+        for (let i = 0; i < json.results.length; i++) {
             // JSON Object
             const movie = {
                 title: json.results[i].original_title,
                 release_date: json.results[i].release_date,
                 id: json.results[i].id,
+                overview: json.results[i].overview,
                 image: "https://image.tmdb.org/t/p/w500" + json.results[i].poster_path ,
             }
             movies.push(movie)

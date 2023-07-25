@@ -13,12 +13,22 @@
   background: linear-gradient(to right, rgb(35, 183, 200), rgb(45, 90, 180));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  animation: fade 3s ease-in;
+}
+
+@keyframes fade{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
 }
 
 .movie-card {
   border-radius: 8px;
   border: 1px solid transparent;
-  padding: 0.6em 1.2em;
+  padding: 0.6em 1.2em; 
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
@@ -51,9 +61,10 @@
 }
 
 .nav-bar{
+  position: inherit;
   font-family: 'Bebas Neue','Helvetica Neue', sans-serif;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   text-align: center;
   align-items: center;
   flex-direction: row;
@@ -63,7 +74,6 @@
 
 .nav-bar li {
   display: inline-block;
-  padding: 0px;
   padding: 20px;
   font-family: Inter;
 }
