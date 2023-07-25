@@ -14,7 +14,4 @@ app.use('/movies', movieRoute);
 const searchMovieRoute = require('./routes/advanced');
 app.use('/advanced', searchMovieRoute);
 
-app.listen(
-    PORT,
-    () => console.log(`it's alive on http://localhost:${PORT}`)
-)
+app.listen(PORT, () => console.log(`it's alive on http://localhost:${PORT}`))
